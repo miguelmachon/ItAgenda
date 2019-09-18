@@ -10,6 +10,8 @@ namespace ItAgenda.Web.Data.Entities
 
         public int Id { get; set; }
 
-
+        
+        
+        
     }
 }

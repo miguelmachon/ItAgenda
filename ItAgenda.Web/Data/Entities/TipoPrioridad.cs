@@ -15,7 +15,7 @@ namespace ItAgenda.Web.Data.Entities
         [Required]
         [Display(Name = "Tipo Prioridad")]
         [MaxLength(50, ErrorMessage = "The {0} field can not have more than {1} characters.")]
-        public int Nombre { get; set; }
+        public String Nombre { get; set; }
 
         public ICollection<Requerimento> Requerimentos  { get; set; }
 

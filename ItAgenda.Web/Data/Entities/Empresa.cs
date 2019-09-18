@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ItAgenda.Web.Data.Entities
 {
@@ -46,14 +43,10 @@ namespace ItAgenda.Web.Data.Entities
         [Display(Name = "Email")]
         [DataType(DataType.EmailAddress)]
         [MaxLength(100, ErrorMessage = "The {0} field can not have more than {1} characters.")]
-        public int Email { get; set; }
+        public string Email { get; set; }
 
 
         public ICollection<It> Its { get; set; }
-
-
-
-
 
 
     }
